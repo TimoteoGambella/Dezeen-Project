@@ -1,0 +1,101 @@
+.Carousel{
+    width: 100%;
+    height: 480px;
+    position: relative;
+    font-family: 'Roboto Condensed';
+    color: white;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit:cover;
+    }
+    h3{
+        position: absolute;
+        left: 3.33%;
+        top: 4.38%;
+        width: 50%;
+    }
+    h1{
+        position: absolute;
+        left: 3.33%;
+        top: 63%;
+        font-weight: 500;
+        font-size: 48px;
+        width: 90%;
+    }
+    h4{
+        position: absolute;
+        left: 3.33%;
+        top: 75.54%;
+        font-weight: 400;
+        font-size: 16px;
+        width: 80%;
+    }
+    p{
+        width: 484px;
+        position: absolute;
+        left: 3.33%;
+        top: 82.08%;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+
+        display: -webkit-box;
+        height: 31px; 
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .Left{
+        position: absolute;
+        left: 0.2%;
+        border: 0;
+        background-color: rgba(255, 255, 255, 0);
+        width: 70px;
+        height: 100%;
+    }
+    .Right{
+        position: absolute;
+        right: 0.2%;
+        border: 0;
+        background-color: rgba(255, 255, 255, 0);
+        width: 70px;
+        height: 100%;
+    }
+    .icon{
+        color: white;
+        width: 26px;
+        height: 23px;
+        cursor: pointer;
+        &:hover{
+            color: #606999;
+        }
+    }
+    .itemsAll{
+        width: 100%;
+        justify-content: center;
+        position: absolute;
+        top: 90%;
+        bottom: 4.38%;
+        height: 35px;
+        .item{
+            width: 16px;
+            height: 16px;
+            background-color: white;
+            border-radius: 100%;
+            border: 0;
+            margin: 0px 4px 0px 4px;
+            cursor: pointer;
+            &:hover{
+                background-color: #606999;
+            }
+        }
+        .item-active{
+            @extend .item;
+            background-color: #606999;
+        }
+        
+    }
+}
+

@@ -1,0 +1,45 @@
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 52.6%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    height: 401px;
+    width: 522px;
+    border-radius: 20px;
+    padding: 27px 54px 28px 54px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .modalContent{
+        text-align: center;
+        img{
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        }
+        h5{
+            margin: 22px 0px 22px 0px;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 28px;
+            color: #606999;
+        }
+        p{
+            margin-bottom: 22px;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 23px;
+            letter-spacing: 0.0015em;
+        }
+        div{
+            justify-content: center;
+            .iconRedesModal{
+                color: #606999;
+                height: 20px;
+                width: 20px;
+                margin: 0px 10px 0px 10px;
+            }
+        }
+    }
+}

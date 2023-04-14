@@ -1,0 +1,51 @@
+.Footer{
+    margin: 10px 80px 73px 80px;
+    .MenuFooter{
+        ul{
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            list-style: none;
+            font-size: 24px;
+            li{
+                text-align: center;
+                a{
+                    text-decoration: none;
+                    color: black;   
+                    &:hover{
+                        color: #606999;
+                    }
+                }
+                .IconFooter{
+                    color: #606999;
+                    margin: 0px 7px 0px 7px;
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+        }
+        
+    }
+    .InfoFooter{
+        margin-top: 76px;
+        align-items: center;
+        img{
+            height: 104.08px;
+            width: 232.96;
+            margin-right: 43px;
+        }
+        p{
+            font-style: normal;
+            font-size: 20px;
+            line-height: 32px;
+            color: #5F6368;
+        }
+    }
+    .Separator{
+        margin: 32px 0px 32px 0px;
+        border: 1px solid #606999;
+    }
+}
+.Footer-none{
+    display: none;
+}

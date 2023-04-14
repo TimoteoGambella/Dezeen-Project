@@ -1,0 +1,88 @@
+.Project{
+    width: 955px;
+    .Tittle-active{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 34px;
+        line-height: 40px;
+        letter-spacing: 0.0025em;
+        margin-bottom: 15px;
+    }
+    .Tittle-home{
+        @extend .Tittle-active;
+        font-weight: 500;
+        color: #606999;
+        justify-content: end;
+        text-align: end;
+    }
+    .ImagesProject{
+        margin-bottom: 13px;
+        width: 955px;
+        justify-content: space-between;
+        .ImagePrincipal{
+            width: 738px;
+            height: 661px;
+            object-fit: cover;
+        }
+        .ImagesProjectColumn{
+            justify-content: space-between;
+            .imgLength{
+                position: relative;
+                display: inline-block;
+                height: 304px;
+                width: 197px;
+                img{
+                    object-fit: cover;  
+                }
+                p{
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 60px;
+                    line-height: 70px;
+                    letter-spacing: -0.005em;
+                    color: black;
+                }
+            }
+        }
+    }
+    .TitleProject{
+        align-items: baseline;
+        justify-content: space-between;
+        font-style: normal;
+        h3{
+            font-size: 24px;
+            line-height: 28px;
+            display: flex;
+            align-items: center;
+        }
+        .buttonProject{
+            width: 197px;
+            height: 54px;
+            font-size: 20px;
+            line-height: 23px;
+            letter-spacing: 0.0015em;
+            border: 1px solid #606999;
+            color: #606999;
+            text-decoration: none;
+        }
+    }
+    .DescriptionProject{
+        width: 100%;
+        margin-top: 25px;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 23px;
+        letter-spacing: 0.0015em;
+    }
+}
+.ProjectMarginRigth{
+    margin-right: 128px;
+}
+.ProjectMarginBottom{
+    margin-bottom: 50px;
+}

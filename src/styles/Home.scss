@@ -1,0 +1,100 @@
+.Home.font-roboto-cond{
+    .ContentHome{
+        margin: 0px;
+        padding-left: 80px;
+        padding-top: 30px;
+
+        .Headers{
+            overflow: hidden;
+            .SubTitle{
+                align-items: baseline;
+                justify-content: space-between;
+                margin: 15px 0px 15px 0px;
+                h3{
+                    font-style: normal;
+                    font-size: 34px;
+                    line-height: 40px;
+                    letter-spacing: 0.0025em;
+                }
+                .ArrowRight{
+                    align-items: baseline;
+                    color: #606999;
+                    margin-right: 80px;
+                    border: 0;
+                    background-color: rgba(255, 255, 255, 0);
+                    cursor: pointer;
+                    p{
+                        font-style: normal;
+                        font-size: 24px;
+                        line-height: 28px;
+                        margin-right: 9px;
+                    }
+                    .icon{
+                        color: #606999;
+                        width: 16px;
+                        height: 14px;
+                    }
+                }
+            }
+        }
+
+        .Magazine{
+            margin-right: 80px;
+            justify-content: space-between;
+            .ImageMagazine{
+                width: 592px;
+                height: 592px;
+                border-radius: 30px;
+                margin-right: 38px;
+            }
+            .TextMagazine{
+                justify-content: center;
+                align-items: center;
+                h2{
+                    font-size: 60px;
+                    line-height: 70px;
+                    letter-spacing: -0.005em;
+                    text-align: center;
+                }
+                p{
+                    font-size: 24px;
+                    font-weight: 300;
+                    line-height: 28px;
+                    letter-spacing: 0em;
+                    text-align: center;
+                    margin: 41px 0px 41px 0px;
+                }
+            }
+            button{
+                height: 64px;
+                width: 233.48px;
+
+            }
+        }
+
+        .Separator{
+            margin: 32px 80px 32px 0px;
+            border: 1px solid #606999;
+        }
+
+        .Creators.d-flex-center{
+            h2{
+                font-size: 34px;
+                line-height: 40px;
+                letter-spacing: 0.0025em;
+                margin-bottom: 40px;
+            }
+            .PhotosCreators{
+                img{
+                    border-radius: 100%;
+                    width: 196px;
+                    height: 196px;
+                    margin: 0px 65px 0px 65px;
+                }
+            }
+            
+        }
+    }
+    
+    
+}

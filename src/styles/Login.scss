@@ -1,0 +1,209 @@
+@mixin marginH2($top, $rigth){
+    margin: $top $rigth 0px 0px;
+    font-style: normal;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+}
+
+@mixin iconClosed{
+    position: absolute;
+    top: 2.51%;
+    bottom: 95.82%;
+    color: #606999;
+    rotate: 45deg;
+}
+
+.login{
+    .iconClosedSigin{
+        @include iconClosed;
+        left: 97.67%;
+    }
+    .iconClosedLogin{
+        @include iconClosed;
+        right: 97.67%;
+    }    
+    .imgLogin{
+        width: 66.7%;
+        object-fit: cover;
+    }
+    .textLogin{
+        width: 33.3%;
+        .textLoginInt{
+            margin-left: 89px;
+            .h2-login{
+                @include marginH2(193px, 146px);
+            }
+            .h2-sigin{
+                @include marginH2(122px, 135px);
+            }
+            p.font-w-400{
+                margin: 16px 88px 0px 0px;
+                font-size: 20px;
+            }
+            .formLogin{
+                margin-top: 54px;
+                width: 70%;
+                .input-forms{
+                    margin-bottom: 52px;
+                    .inputContent{
+                        position: relative;
+                        input{
+                            width: 100%;
+                            height: 48px;
+                            border: 1px solid #606999;
+                            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+                            border-radius: 10px;
+                            padding: 13px 10px 13px 10px;
+                            font-size: 12px;
+                            color: #606999;
+                            outline: none;   
+                        }
+                        input::placeholder { 
+                            color: #979797; 
+                        }
+                        .iconVisible{
+                            position: absolute;
+                            top: 36%;
+                            right: 10px;
+                            color: #606999;
+                        }
+                        .iconOculto{
+                            display: none;
+                        }
+                        
+                    }
+                    .labelInput{
+                        font-weight: 500;
+                        font-size: 12px;
+                        line-height: 14px;
+                        color: #979797;
+                        margin-bottom: 5px;
+                    }
+                    .labelError{
+                        font-weight: 500;
+                        font-size: 12px;
+                        line-height: 14px;
+                        color: #EE513B;
+                        margin-top: 5px;
+                        width: auto;
+                        display: flex;
+                        justify-content: flex-end;
+                    }
+                }
+                .divCheckbox-sigin{
+                    margin-top: 17px;
+                    color: #797A7C;
+                    .checkbox{
+                        border-radius: 4px;
+                        margin-right: 6px;
+                        margin-top: 0px;
+                        align-content:flex-start;
+                        width: 16px;
+                        height: 16px;
+                    }
+                    .checkbox:checked {
+                        appearance: none;
+                        background-color: #606999 !important;
+                    }
+                    .checkbox:not(:checked) {
+                        appearance: none;
+                        border: 1px solid #EE513B;
+                    }
+                    .checkboxLabel{
+                        font-size: 12px;
+                        span{
+                            color: #606999;
+                        }
+                    }
+                }
+                .divCheckbox-login{
+                    @extend .divCheckbox-sigin;
+                    justify-content: space-between;
+                    align-items: baseline;
+                    font-size: 12px;
+                    line-height: 14px;
+                    letter-spacing: 0.004em;
+                    a.principal-color{
+                        text-decoration: none;
+                        color: #979797;
+                    }
+                    .checkbox:not(:checked) {
+                        appearance: none;
+                        border: 1px solid #606999;
+                    }
+                }
+                .finishLogin{
+                    margin-top: 32px;
+                    margin-bottom: 105px;
+                    font-size: 16px;
+                    .LinkSigIn{
+                        margin-top: 10px;
+                        font-weight: 700;
+                        text-decoration: none;
+                    }
+                }
+                
+            }
+        }
+    }
+
+}
+
+
+
+.custom-popup-sigin {
+    border-radius: 20px !important;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5)) !important;
+    background-image: url("../assets/confirm.png") !important;
+    height: 608px !important;
+    padding: 180px 0px 250px 0px !important;
+    font-family: 'Roboto Condensed', sans-serif !important;
+    .custom-button {
+        background-color: #606999 !important;
+        border-radius: 10px !important;
+        height: 48px !important;
+        width: 352px !important;
+        font-style: normal !important;
+        font-weight: 400 !important;
+        font-size: 16px !important;
+        line-height: 19px !important;
+        letter-spacing: 0.0015em !important;
+        margin: 20px 0px 0px 0px !important;
+        padding: 0px !important;
+    }
+    .swal2-title{
+        font-style: normal !important;
+        font-weight: 700 !important;
+        font-size: 48px !important;
+        line-height: 56px !important;
+        color: #000000 !important;
+        margin: 0px !important;
+        padding: 0px !important;
+    }
+    .swal2-html-container{
+        font-style: normal !important;
+        font-weight: 400 !important;
+        font-size: 14px !important;
+        line-height: 16px !important;
+        letter-spacing: 0.0025em !important;
+        color: #5F6368 !important; 
+        margin: 0px !important;
+        padding: 0px !important;
+        padding-top: 7px !important; 
+    }
+}
+.swal2-container.swal2-backdrop-show, .swal2-container.swal2-noanimation{
+    backdrop-filter: blur(3px);
+}
+.swal2-validation-message{
+    display: none !important;
+}
+
+.input-error{
+    color:#EE513B !important;
+}
+
+
+
+

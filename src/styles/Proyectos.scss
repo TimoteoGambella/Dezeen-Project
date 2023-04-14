@@ -1,0 +1,42 @@
+.Proyectos{
+    .ContentProyectos{
+        justify-content: space-around;
+        margin: 40px 60px 62px 60px;
+        .ColumnProjects{
+            flex-direction: row;
+            width: 955px;
+            margin-right: 42px;
+                h1{
+                    font-size: 34px;
+                    line-height: 40px;
+                    text-align: right;
+                }
+                .hrContentProyectos{
+                    margin: 18px 0px 18px 0px;
+                    border: 2px solid #000000;;
+                }
+        }
+    }
+}
+
+#mobile-warning{
+    display: none;
+    @include screen_1360{
+        align-items: center;
+        background-color: #1e1e1e;
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        height: 100vh;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        user-select: none;
+        color: white;
+        font-size: 25px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9999;
+    }
+}

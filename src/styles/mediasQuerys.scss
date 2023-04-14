@@ -1,0 +1,44 @@
+@mixin screen_601 {
+    @media (max-width: 601px) {
+      @content;
+    }
+}
+@mixin screen_1360 {
+  @media (max-width: 1360px) {
+    @content;
+  }
+}
+
+// @mixin screen_1450 {
+//     @media (min-width: 1450px) {
+//       @content;
+//     }
+// }
+  
+//   @mixin screen_1366 {
+//     @media (min-width: 1366px) {
+//       @content;
+//     }
+// }
+  
+//   @mixin screen_1200 {
+//     @media (min-width: 1200px) {
+//       @content;
+//     }
+// }
+
+
+
+// div{
+//   background-color: red;
+//   @include screen_601{
+//       background-color: blue;
+//   }
+// }
+
+// h1{
+//   color: black;
+//   @include screen_601{
+//       color: white;
+//   }
+// }

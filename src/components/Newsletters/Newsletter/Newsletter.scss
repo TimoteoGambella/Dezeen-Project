@@ -1,0 +1,50 @@
+.ColumnNewsletter{
+    width: 305px;
+    h3{
+        font-size: 33px;
+        line-height: 40px;
+        letter-spacing: 0.0025em;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    .InputNewsletter{
+        margin: 16px 0px 32px 0px;
+        color: #5F6368;
+        height: 48px;
+        justify-content: space-around;
+        align-items: center;
+        border: 0 ;
+        background: rgba(73, 69, 79, 0.08);
+        border-radius: 10px;
+        input{
+            border: 0;
+            background: rgba(73, 69, 79, 0);
+            height: 47px;
+            width: 200px;
+            outline: none;            
+        }
+    }
+    .AllNewsletter{
+        border: 1.5px solid #797A7C;
+        padding: 32px;
+        img{
+            width: 241px;
+            height: 192px;
+            margin-bottom: 13px;
+            object-fit: cover;
+        }
+        h3{
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 16px;
+            letter-spacing: 0.001em;
+            margin-bottom: 7px;
+        }
+        p{
+            font-weight: 300;
+            font-size: 12px;
+            line-height: 14px;
+            letter-spacing: 0.004em;
+            margin-bottom: 32px;
+        }
+    }
+}
